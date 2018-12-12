@@ -21,6 +21,7 @@ pipeline {
             } catch (Exception err) {
               currentBuild.result = 'FAILURE'
               sh "exit 1"
+              sh java -version
             }
           }}
       }
