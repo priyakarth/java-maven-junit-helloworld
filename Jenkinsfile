@@ -5,7 +5,7 @@ pipeline {
          steps {
             script {
                checkout scm
-               sh "yum install -y maven" 
+               sh " sudo yum install -y maven" 
                  def mvnHome = tool 'maven-1'
             }
          }
